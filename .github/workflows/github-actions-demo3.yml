@@ -15,7 +15,6 @@ jobs:
     steps:
       - name: Print trigger event
         run: |
-          set -eo pipefai
           echo "🎉 The job was triggered by event: ${{ github.event_name }}"
           echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}"
 
